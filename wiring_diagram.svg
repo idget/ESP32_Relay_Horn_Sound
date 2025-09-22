@@ -1,0 +1,154 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">ESP32 DJ Car Horn Wiring Diagram</text>
+  
+  <!-- ESP32 DevKit -->
+  <g id="esp32">
+    <rect x="50" y="80" width="120" height="200" fill="#1a1a1a" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="110" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#000">ESP32 DevKit</text>
+    
+    <!-- ESP32 Pins -->
+    <!-- Left side pins -->
+    <circle cx="40" cy="110" r="3" fill="#ffd700"/>
+    <text x="25" y="115" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#000">3V3</text>
+    
+    <circle cx="40" cy="130" r="3" fill="#000"/>
+    <text x="25" y="135" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#000">GND</text>
+    
+    <circle cx="40" cy="190" r="3" fill="#ff6b35"/>
+    <text x="25" y="195" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#000">GPIO4</text>
+    
+    <circle cx="40" cy="210" r="3" fill="#ff6b35"/>
+    <text x="25" y="215" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#000">GPIO5</text>
+    
+    <!-- Right side pins -->
+    <circle cx="180" cy="130" r="3" fill="#000"/>
+    <text x="195" y="135" text-anchor="start" font-family="Arial, sans-serif" font-size="10" fill="#000">GND</text>
+  </g>
+  
+  <!-- Relay Module -->
+  <g id="relay">
+    <rect x="320" y="100" width="140" height="120" fill="#4a90e2" stroke="#2c5aa0" stroke-width="2" rx="3"/>
+    <text x="390" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#000">Relay Module</text>
+    
+    <!-- JD-VCC Jumper -->
+    <rect x="325" y="110" width="30" height="8" fill="#ffd700" stroke="#f39c12" stroke-width="1"/>
+    <text x="340" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#000">JD-VCC JUMPER</text>
+    
+    <!-- Relay pins -->
+    <circle cx="310" cy="140" r="3" fill="#ffd700"/>
+    <text x="295" y="145" text-anchor="end" font-family="Arial, sans-serif" font-size="9" fill="#000">VCC</text>
+    
+    <circle cx="310" cy="160" r="3" fill="#000"/>
+    <text x="295" y="165" text-anchor="end" font-family="Arial, sans-serif" font-size="9" fill="#000">GND</text>
+    
+    <circle cx="310" cy="180" r="3" fill="#ff6b35"/>
+    <text x="295" y="185" text-anchor="end" font-family="Arial, sans-serif" font-size="9" fill="#000">IN1</text>
+    
+    <!-- Relay output terminals -->
+    <circle cx="470" cy="140" r="3" fill="#ff0000"/>
+    <text x="485" y="145" text-anchor="start" font-family="Arial, sans-serif" font-size="9" fill="#000">COM</text>
+    
+    <circle cx="470" cy="160" r="3" fill="#ff0000"/>
+    <text x="485" y="165" text-anchor="start" font-family="Arial, sans-serif" font-size="9" fill="#000">NO</text>
+    
+    <circle cx="470" cy="180" r="3" fill="#ff0000"/>
+    <text x="485" y="185" text-anchor="start" font-family="Arial, sans-serif" font-size="9" fill="#000">NC</text>
+  </g>
+  
+  <!-- Momentary Button -->
+  <g id="button">
+    <circle cx="110" cy="350" r="20" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <text x="110" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#fff" font-weight="bold">BTN</text>
+    <text x="110" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#000">Momentary Button</text>
+    
+    <!-- Button terminals -->
+    <circle cx="90" cy="350" r="3" fill="#333"/>
+    <circle cx="130" cy="350" r="3" fill="#333"/>
+  </g>
+  
+  <!-- Car Horn -->
+  <g id="horn">
+    <ellipse cx="650" cy="160" rx="30" ry="20" fill="#ffd700" stroke="#f39c12" stroke-width="2"/>
+    <path d="M 620 160 Q 630 150, 650 160 Q 630 170, 620 160" fill="#e67e22"/>
+    <text x="650" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#000">12V Car Horn</text>
+    
+    <!-- Horn terminals -->
+    <circle cx="620" cy="150" r="3" fill="#ff0000"/>
+    <text x="605" y="155" text-anchor="end" font-family="Arial, sans-serif" font-size="9" fill="#000">+12V</text>
+    
+    <circle cx="620" cy="170" r="3" fill="#000"/>
+    <text x="605" y="175" text-anchor="end" font-family="Arial, sans-serif" font-size="9" fill="#000">GND</text>
+  </g>
+  
+  <!-- 12V Power Supply -->
+  <g id="power">
+    <rect x="550" y="300" width="80" height="40" fill="#2c3e50" stroke="#34495e" stroke-width="2" rx="3"/>
+    <text x="590" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#000">12V Power Supply</text>
+    
+    <!-- Power supply terminals -->
+    <circle cx="570" cy="350" r="3" fill="#ff0000"/>
+    <text x="570" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">+12V</text>
+    
+    <circle cx="610" cy="350" r="3" fill="#000"/>
+    <text x="610" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">GND</text>
+  </g>
+  
+  <!-- Wiring -->
+  <!-- 5V to Relay VCC -->
+  <line x1="590" y1="300" x2="310" y2="140" stroke="#ffd700" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- GND ESP32 to Relay GND -->
+  <line x1="40" y1="130" x2="310" y2="160" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- GPIO4 to Button -->
+  <line x1="40" y1="190" x2="90" y2="350" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Button to ESP32 GND -->
+  <line x1="130" y1="350" x2="180" y2="130" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- GPIO5 to Relay IN1 -->
+  <line x1="40" y1="210" x2="310" y2="180" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Relay COM to 12V+ -->
+  <line x1="470" y1="140" x2="570" y2="350" stroke="#ff0000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Relay NO to Horn +12V -->
+  <line x1="470" y1="160" x2="620" y2="150" stroke="#ff0000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Horn GND to Power Supply GND -->
+  <line x1="620" y1="170" x2="610" y2="350" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="currentColor"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <g id="legend" transform="translate(50, 450)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#000">Wiring Legend:</text>
+    
+    <line x1="0" y1="20" x2="30" y2="20" stroke="#ffd700" stroke-width="3"/>
+    <text x="35" y="25" font-family="Arial, sans-serif" font-size="11" fill="#000">5V Power</text>
+    
+    <line x1="120" y1="20" x2="150" y2="20" stroke="#000" stroke-width="3"/>
+    <text x="155" y="25" font-family="Arial, sans-serif" font-size="11" fill="#000">Ground</text>
+    
+    <line x1="210" y1="20" x2="240" y2="20" stroke="#ff6b35" stroke-width="3"/>
+    <text x="245" y="25" font-family="Arial, sans-serif" font-size="11" fill="#000">GPIO Signal</text>
+    
+    <line x1="330" y1="20" x2="360" y2="20" stroke="#ff0000" stroke-width="3"/>
+    <text x="365" y="25" font-family="Arial, sans-serif" font-size="11" fill="#000">12V Power</text>
+  </g>
+  
+  <!-- Notes -->
+  <g id="notes" transform="translate(50, 520)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#000">Important Notes:</text>
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="10" fill="#000">• Use a relay rated for at least 12V/10A for car horn operation</text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="10" fill="#000">• Ensure JD-VCC jumper is connected on relay module</text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="10" fill="#000">• Connect 5V power to relay VCC (not ESP32 3.3V)</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="10" fill="#000">• Button uses internal pull-up resistor (no external resistor needed)</text>
+  </g>
+</svg>
